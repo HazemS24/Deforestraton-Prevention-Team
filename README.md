@@ -1,6 +1,6 @@
-**# Deforestraton-Prevention-Team
+# Deforestraton-Prevention-Team
 
-**Program Version 1.0 (1/17/2022)**
+**Program Version 1.0 (1/17/2022)
 
 
 Usage Notes:
