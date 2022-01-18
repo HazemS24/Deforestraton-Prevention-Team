@@ -1,6 +1,6 @@
 # Deforestraton-Prevention-Team
 
-**Program Version 1.0 (1/17/2022)
+Program Version 1.0 (1/17/2022)
 
 
 ***Usage Notes:***
@@ -20,4 +20,4 @@ You do not need to install any programs to be able to use the website.
 If any bugs are found feel free to contact us using the email below.
 
 ***Contact Email:*** hazem.saad2004@gmail.com
-**
+
