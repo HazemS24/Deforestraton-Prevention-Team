@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Deforestation Foundation</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload = "getThread()">
+	<div class="bar">
+		<a class="notCurrent" href="index.html">Home</a>
+		<a class="notCurrent" href="statisticalCalculator.html">Statistical Calculator</a>
+		<a class="notCurrent" href="yourContribution.html">Your Contribution</a>
+		<a class="current" href="volunteering.html">Volunteering</a>
+    <a class="notCurrentr" href="accountCreator.html">Login</a>   
+                
+                </div>
+                <h1 class="special"> The Deforestation Prevention Foundation </h1>
+                <script src="script.js"></script>
+
+                </div></div>
+                	<div class="top-bar">
+		<h>
+			Forum
+		</h>
+	</div>
+	
+	<textarea id = "headin"></textarea>
+	<textarea id = "descript"></textarea>
+	<button onclick = "window.location.reload(true)" class = "push">Add Thread</button>
+	<div class="main">
+		<ol>
+		</ol>
+	</div>
+	<script src="data.js"></script>
+	<script>
+	var idcnter = 3
+	var pbtn = document.querySelector('.push');
+        pbtn.addEventListener('click', function() {
+		var heading = document.getElementById("headin").value
+		var descript = document.getElementById("descript").value
+
+		var threadfo = {
+			id: idcnter,
+			title: heading,
+			author: "Anonymous",
+			date: Date.now(),
+			content: descript,
+			comments: [
+			{
+				id: idcnter,
+				author: "Stuff",
+				date: Date.now(),
+				content: "Test"
+			},
+        ]
+		}
+		idcnter += 1
+		const data = {threadfo};
+		console.log(data + "!!!")
+                const options = {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                        'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+                };
+                console.log("clicked the button");
+                fetch('https://StrikingHappyPixel.1el680103.repl.co', options)
+                .then(response => response.json())
+                .then(data => {
+                console.log("Ran")
+                console.log('Success:', data);
+                return data;
+                })
+                
+                
+                .catch((error) => {
+                console.error('Error:', error);
+                });
+	});
+
+
+	
+    </script>
+    <style>
+    </style>
+</body>
+        </body>
+</html><head>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<br></br>
+
